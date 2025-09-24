@@ -122,20 +122,23 @@ int main() {
 
 
     return 0;
-}*/
+}
 
-
+Problem_19
 int main() {
     int n;
-    cout << "Let us find your harmonic series: ";
+    cout << "Let us find your factors now: ";
     cin >> n;
 
-
-
-
+    for (int i = 2; i <= n; i++) {
+        while (n % i == 0) {
+            cout << i << " ";
+            n /= i;
+        }
+    }
 
     return 0;
-}
+}*/
 
 
 
